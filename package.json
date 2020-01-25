@@ -1,0 +1,12 @@
+{
+  "name": "shareknowledgeclient",
+  "version": "1.0.0",
+  "description": "This is my personal articles spot to share what i have learned throughout the day. Others can also join and share their experience. As we all know Sharing Is Caring :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "author": "Pradip Shrestha",
+  "license": "ISC"
+}
