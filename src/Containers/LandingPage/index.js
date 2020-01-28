@@ -3,10 +3,12 @@ import Navbar from '../../Components/NavBar'
 
 const LandingPage = () =>{
     return(
-        <div>
+        <>
             <Navbar/>
-            This is the Landing Page
-        </div>
+            <div className='landing'>
+                This is the Landing Page
+            </div>
+        </>
     )
 };
 
