@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 export default function NavBar() {
     const navbarContainer ={
@@ -27,19 +27,25 @@ export default function NavBar() {
         padding: '4px 8px'
 
     }
+
+    const [navLinks, toggleNavLinks] = useState(false);
+
+    const handleHamBurgerPress = () => {
+        toggleNavLinks(!navLinks)
+    }
     
     return(
         <div className='nav'>
-            <div className='hamburger'>
+            <div className='hamburger' onClick={handleHamBurgerPress}>
                 <div className='line'></div>
                 <div className='line'></div>
                 <div className='line'></div>
             </div>
 
-            <ul className='nav-links'>
-                <li><a href="#">New Post</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Sign Up</a></li>
+            <ul className= {navLinks ? 'nav-links open' :'nav-links'}>
+                <li className = {navLinks ? 'fade' :null}><a href="#">New Post</a></li>
+                <li className = {navLinks ? 'fade' :null}><a href="#">Login</a></li>
+                <li className = {navLinks ? 'fade' :null}><a href="#">Sign Up</a></li>
             </ul>
         </div>
     )
