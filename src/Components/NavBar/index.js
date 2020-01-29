@@ -27,14 +27,20 @@ export default function NavBar() {
         padding: '4px 8px'
 
     }
+    
     return(
-        <div style={navbarContainer}>
-            <div style={{marginRight:'auto'}}>Header</div>
-            <div style={loginWrapper}>
-                <div style={loginButtonStyle}>Login</div>
-                <div style={signUpButtonStyle}>Sign Up</div>
+        <div className='nav'>
+            <div className='hamburger'>
+                <div className='line'></div>
+                <div className='line'></div>
+                <div className='line'></div>
             </div>
 
+            <ul className='nav-links'>
+                <li><a href="#">New Post</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
         </div>
     )
 }
