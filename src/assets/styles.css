@@ -10,13 +10,14 @@ body {
 .nav {
     height: 10vh;
     background: #5b78c7;
+    display: flex;
 }
 
 .nav-links {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    width: 50%;
+    flex:1;
     align-items: center;
     height:100%;
     margin-left: auto;  
@@ -32,6 +33,24 @@ body {
     height: 90vh;
     background-color: pink;
 }
+
+.nav-header {
+    font-size: 16;
+    color: white;
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.create-article-container {
+    height: 90vh;
+    background: dimgrey;
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -50,6 +69,7 @@ body {
         position: absolute;
         right: 5%;
         top: 50%;
+        flex:1;
         transform: translate(-5%, -50%);
         z-index: 2;
         cursor: pointer;
@@ -62,8 +82,8 @@ body {
         width: 100%;
         flex-direction: column;
         background: #5b78c7;        
-        clip-path: circle(100px at 90% -20%);
-        -webkit-clip-path: circle(100px at 90% -20%);
+        clip-path: circle(0px at 90% -20%);
+        -webkit-clip-path: circle(0px at 90% -20%);
         transition: all 1s ease-out;
         pointer-events: none;
     }

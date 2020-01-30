@@ -32,5 +32,8 @@ module.exports = {
             template:'index.html',
             inject:true
         })
-    ]
+    ],
+    devServer: {
+        historyApiFallback: true
+      }
 }
